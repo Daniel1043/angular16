@@ -1,0 +1,23 @@
+<h1>Componente heroe</h1>
+<dl>
+    <dt>Nombre: </dt>
+    <dd>{{nombre}}</dd>
+    <dd>{{nombreEnMayusculas}}</dd>
+    <dt>Edad: </dt>
+    <dd>{{edad}}</dd>
+    <dt>Metodo: </dt>
+    <dd>{{dimeDescripcion}}</dd>
+
+    <input type="button" 
+    *ngIf="nombre=='superman'"
+    value="Cambiar nombre" 
+    class="btn btn-primary  mx-2" 
+    (click)="cambiarNombre()" >
+    <input type="button" 
+    *ngIf="edad===45"
+    value="Cambiar edad" class="btn btn-primary  mx-2"
+    (click)="cambiarEdad()" >
+    <input type="button" value="Reset" class="btn btn-primary mx-2" 
+    (click)="restaurar()">
+
+</dl>

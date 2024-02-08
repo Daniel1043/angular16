@@ -1,0 +1,14 @@
+<h1>Lista de heroes</h1>
+<h1>{{heroEliminado}}</h1>
+
+<input type="button" 
+*ngIf="heroNames[0]"
+value="Borrar heroes" 
+class="btn btn-outline-danger   mx-2" 
+(click)="borrarHeroe()" >
+
+<ul class="list-group mt-2">
+    <li *ngFor="let heroe of heroNames" class="list-group-item">
+        <h1>{{heroe}}</h1>
+    </li>
+</ul>
